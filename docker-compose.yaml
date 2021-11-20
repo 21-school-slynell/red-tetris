@@ -1,0 +1,65 @@
+version: "3"
+services:
+  blur-app:
+    build:
+      context: .
+    container_name: blur-app
+    depends_on:
+      - postgres
+    environment:
+      DATABASE_URL: DATABASE_URL
+      NODE_ENV: NODE_ENV
+      PORT: PORT
+      POSTGRES_USER: blur
+      POSTGRES_PASSWORD: blur100500
+      POSTGRES_DB: blur-db
+    ports:
+      - "8000:8000"
+    env_file:
+      ./.env
+    restart: always
+    networks:
+      - awesome
+  postgres:
+    build:
+      context: .
+      dockerfile: Dockerfile.postgres
+    container_name: blur-postgres
+    image: postgres:13
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./postgresdata:/var/lib/postgresql/data
+      - ./src/migrations/dbinit.sql:/docker-entrypoint-initdb.d/dbinit.sql
+    restart: always
+    environment:
+      POSTGRES_USER: blur
+      POSTGRES_PASSWORD: blur100500
+      POSTGRES_DB: blur-db
+    networks:
+      - awesome
+    env_file:
+      ./.env
+  pgadmin:
+    container_name: blur-pgadmin
+    image: dpage/pgadmin4:4.18
+    restart: always
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@admin.com
+      PGADMIN_DEFAULT_PASSWORD: secret
+      PGADMIN_LISTEN_PORT: 80
+    ports:
+      - "8080:80"
+    volumes:
+      - pgadmin-data:/var/lib/pgadmin
+    depends_on:
+      - postgres
+    networks:
+      - awesome
+
+volumes:
+    pgadmin-data:
+
+networks:
+    awesome:
+        driver: bridge
