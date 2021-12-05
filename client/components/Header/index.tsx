@@ -57,7 +57,7 @@ export const Header: FC = () => {
             <Typography color="primary" variant="h6">
                 red tetris
             </Typography>
-            <Box width={'25%'} display="flex" justifyContent="space-between">
+            <Box width={'25%'} display="flex" justifyContent="end">
                 <IconButton onClick={handleChangeTypeTheme} size="small">
                     {type === 'light' ? (
                         <Brightness2Icon fontSize="inherit" />

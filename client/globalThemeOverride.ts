@@ -25,7 +25,7 @@ export const globalThemeOverride = (type: PaletteType = 'light') => createTheme(
   palette: {
     type,
     primary: {
-      main: type === 'light' ? red[400] : red[400],
+      main: type === 'light' ? lightBlue[500] : lightBlue[500],
     },
   },
   shape: {

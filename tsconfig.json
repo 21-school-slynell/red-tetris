@@ -39,6 +39,9 @@
             "@pages/*": [
                 "./client/pages/*"
             ],
+            "~features/*": [
+                "./client/features/*"
+            ]
         }
     },
     "include": [
