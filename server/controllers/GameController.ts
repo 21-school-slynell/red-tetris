@@ -1,16 +1,14 @@
 import { Response, Request } from 'express';
-import { PREFIX } from 'server/server.utils';
+import { getNameRooms } from 'server/socket/utils/rooms';
 
 export class GameController {
   public static getRooms(req: Request, res: Response) {
     const socket = req.app.get('socket');
+
     const { rooms } = socket.of('/').adapter;
+    const nameRooms = getNameRooms(rooms);
 
-    const nameRooms = (Array.from(rooms.keys()) as string[]).filter((name: string) => name.indexOf(PREFIX) === 0);
-
-    console.log(rooms);
-    const result = {} as any;
-
+    const result = {} as Record<string, number>;
     nameRooms.forEach((name) => {
       result[name] = rooms.get(name).size;
     });

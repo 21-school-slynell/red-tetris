@@ -1,12 +1,6 @@
 import io from 'socket.io-client';
 import { pick } from 'ramda';
-
-// Зарегистрированные события
-export const SOCKET_EVENTS = {
-  TELEPHONY_STATUS_UPDATED: 'telephony:statusUpdated',
-  AGENT_STATUS_UPDATED: 'agent:statusUpdated',
-  AGENT_NOTIFICATIONS_UPDATED: 'agent:notificationsUpdated',
-};
+import { NAME_EVENT } from 'server/socket/config';
 
 export type CreateSocketClientProps = {
   host: string,
@@ -23,7 +17,7 @@ export function createSocketClient({ host = '', options = {}, handlers = {} }: C
 
   const socket = io(host, resolvedOptions);
 
-  const resolvedHandlers = pick(Object.values(SOCKET_EVENTS), handlers);
+  const resolvedHandlers = pick(Object.values(NAME_EVENT), handlers);
   Object.keys(resolvedHandlers).forEach((event) => socket.on(event, resolvedHandlers[event]));
 
   return socket;

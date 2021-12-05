@@ -2,12 +2,12 @@ import { Server } from 'socket.io';
 import { setupRoutes } from './routes';
 
 export function createSocket() {
-    const io = new Server({
-        path: '/socket/',
-        serveClient: false,
-    });
+  const io = new Server({
+    path: '/socket/',
+    serveClient: false,
+  });
 
-    setupRoutes(io);
+  setupRoutes(io);
 
-    return io;
+  return io;
 }

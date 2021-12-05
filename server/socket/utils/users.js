@@ -1,11 +1,9 @@
-/* eslint-disable no-param-reassign */
-
-export const addUser = ({ login, room, id, io }) => {
+export const addUser = ({ io, ...user }) => {
   if (!Array.isArray(io.users)) {
+    // eslint-disable-next-line no-param-reassign
     io.users = [];
   }
 
-  const user = { id, login, room };
   io.users.push(user);
   return { user };
 };

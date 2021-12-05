@@ -1,9 +1,10 @@
-import { changeOpenGame } from 'client/features/start-game/slice';
-import { createSocketClient, SOCKET_EVENTS } from 'client/utils/socketClient';
+import { createSocketClient } from 'client/utils/socketClient';
 import { push } from 'connected-react-router';
+import { NAME_EVENT } from 'server/socket/config';
+import { changeOpenGame } from '~features/start-game/slice';
 import { StoreProps } from '../store.types';
 
-const createAgentStatusUpdatedHandler = (dispatch: any) => (
+const setUsers = (dispatch: any) => (
   props: any,
 ) => console.log(dispatch, props);
 
@@ -13,19 +14,10 @@ export const socketMiddleware = ({ dispatch, getState }: any) => {
       host: '',
       options: {},
       handlers: {
-        [SOCKET_EVENTS.AGENT_NOTIFICATIONS_UPDATED]: createAgentStatusUpdatedHandler(dispatch),
+        [NAME_EVENT.users]: setUsers(dispatch),
       },
     },
   );
-
-  socket.on('connect', () => {
-    console.log(getState());
-    // const userId = getAuthAgentId(getState());
-
-    // if (userId) {
-    //   sendJoinEvent(socket, userId);
-    // }
-  });
 
   return (next: any) => (action: any) => {
     const {
@@ -33,7 +25,11 @@ export const socketMiddleware = ({ dispatch, getState }: any) => {
     } = getState() as StoreProps;
 
     if (typeGame && !isOpen) {
-      socket.emit('join', { room: name, login });
+      const user = { room: name, login, isMain: false };
+      if (typeGame === 'new-game') {
+        user.isMain = true;
+      }
+      socket.emit('join', user);
       next(changeOpenGame());
       next(push(`/game?name=${name}`));
     }

@@ -3,13 +3,12 @@ import devMiddleware from 'webpack-dev-middleware';
 import hotMiddleware from 'webpack-hot-middleware';
 import cookieParser from 'cookie-parser';
 import webpack, { Configuration } from 'webpack';
-import { Server as ServerIO } from 'socket.io';
 import { createServer } from 'http';
 import * as webpackConfig from '../webpack.config.client';
 import { renderBundle } from './middlewares/renderBundle';
 import { routing } from './routing';
 import { createSocket } from './socket/server';
-import { PREFIX } from './server.utils';
+import { getNameRooms } from './socket/utils/rooms';
 
 const compiler = webpack(webpackConfig as Configuration);
 
@@ -44,11 +43,10 @@ export class Server {
       const socket = req.app.get('socket');
       const { rooms } = socket.of('/').adapter;
 
-      const nameRooms = (Array.from(rooms.keys()) as string[]).filter((name: string) => name.indexOf(PREFIX) === 0);
-
-      socket.to(nameRooms[1]).emit('private message', socket.id, 'Xnj');
-      // console.log(userId, eventId)
-      // const statuses = await socket.senders.sendToUsers([userId], 'loadTesting', eventId);
+      const nameRooms = getNameRooms(rooms);
+      if (nameRooms.length) {
+        socket.to(nameRooms[1]).emit('private message', socket.id, 'Xnj');
+      }
 
       res.jsonp({ result: 'ok' });
     });

@@ -1,8 +1,11 @@
-/* eslint-disable @typescript-eslint/no-shadow */
-import { Server } from 'socket.io';
+import { Server, Socket } from 'socket.io';
 import handlerJoin from './handlers/join';
-import handlerTabActivate from './handlers/tabActivate';
 import handlerDisconnect from './handlers/disconnect';
+
+export type ContextProps = {
+  socket: Socket,
+  io: Server
+};
 
 export function setupRoutes(io: Server) {
   const context = { io };
@@ -11,7 +14,6 @@ export function setupRoutes(io: Server) {
     const socketContext = { ...context, socket };
 
     socket.on('join', handlerJoin.bind(socketContext));
-    socket.on('tabActivate', handlerTabActivate.bind(socketContext));
     socket.on('disconnect', handlerDisconnect.bind(socketContext));
   });
 }
