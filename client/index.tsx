@@ -1,4 +1,4 @@
-import { composeStore, history, rootReducer } from '@core/store';
+import { composeStore, history } from '@core/store';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
@@ -7,6 +7,7 @@ import { ConnectedRouter } from 'connected-react-router';
 import { App } from './App';
 import 'core-js/stable';
 import 'regenerator-runtime/runtime';
+import { rootReducer } from './core/store/reducers/root.reducer';
 
 // eslint-disable-next-line no-underscore-dangle
 const store = composeStore(window.__INITIAL_STATE__);
@@ -28,7 +29,7 @@ ReactDOM.hydrate(
 
 if ((module as any).hot) {
   (module as any).hot.accept('./core/store/store', () => {
-    store.replaceReducer(rootReducer);
+    store.replaceReducer(rootReducer(history));
   });
 }
 // startServiceWorker();

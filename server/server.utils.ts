@@ -2,6 +2,8 @@ import { Request, Response } from 'express';
 import { Response as NodeFetchResponse } from 'node-fetch';
 import setCookie from 'set-cookie-parser';
 
+export const PREFIX = 'SlYnElLRoOms:';
+
 export function getHeadersWithCookies(req: Request) {
   const Cookie = req.headers.cookie;
   return Cookie ? { Cookie } : undefined;
@@ -18,9 +20,8 @@ export function setCookies(fetchResponse: NodeFetchResponse, expressResponse: Re
 
 export function decorationResponse(data: any, success = true) {
   if (success) {
-    return { result: data, success }
+    return { result: data, success };
   }
-  else {
-    return { message: 'Что-то пошло не так!', success }
-  }
+
+  return { message: 'Что-то пошло не так!', success };
 }

@@ -4,6 +4,16 @@ module.exports = {
         project: './tsconfig.eslint.json',
     },
     rules: {
+        'import/extensions': [
+            'error',
+            'ignorePackages',
+            {
+                js: 'never',
+                jsx: 'never',
+                ts: 'never',
+                tsx: 'never',
+            },
+        ],
         'space-before-function-paren': ['off', 'always'],
         'jsx-a11y/label-has-associated-control': 'off',
         '@typescript-eslint/space-before-function-paren': ['error'],
@@ -34,14 +44,14 @@ module.exports = {
                 allowIndentationTabs: true,
             },
         ],
-        "class-methods-use-this": [0],
-        "consistent-return": 'off'
+        'class-methods-use-this': [0],
+        'consistent-return': 'off',
     },
     settings: {
         'import/resolver': {
             node: {
                 extensions: ['.js', '.jsx', '.ts', '.tsx'],
-                paths: ['./src'],
+                paths: ['./client'],
             },
         },
     },

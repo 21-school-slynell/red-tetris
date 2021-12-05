@@ -1,47 +1,30 @@
-import { createStore, applyMiddleware, combineReducers } from 'redux';
-import thunk from 'redux-thunk';
-import { composeWithDevTools } from 'redux-devtools-extension';
 import { createBrowserHistory, createMemoryHistory } from 'history';
-import { routerMiddleware, connectRouter } from 'connected-react-router';
+import { configureStore } from '@reduxjs/toolkit';
 import { StoreProps } from './store.types';
-import { initialStateSnackBar, snackbarReducer } from './reducers/snackbar.reducer';
-import { initialStateTheme, themeReducer } from './reducers/theme.reducer';
-import { gameReducer, initialGameState } from './reducers/game.reducer';
+import { initialStateSnackBar } from './reducers/snackbar.reducer';
+import { initialStateTheme } from './reducers/theme.reducer';
+import { initialGameState } from './reducers/game.reducer';
+import { rootReducer } from './reducers/root.reducer';
+import { getReduxDevToolsOptions } from './devtools';
+import { middlewares } from './middlewares';
+import { initialState as InitialStateStartGame } from '~features/start-game/slice';
 
-export const isServer = !(
-  typeof window !== 'undefined'
-  && window.document
-  && window.document.createElement
-);
+export const isServer = !(typeof window !== 'undefined' && window.document && window.document.createElement);
 
-export const history = !isServer
-  ? createBrowserHistory()
-  : createMemoryHistory();
-
-const middlewares = [
-  thunk,
-  routerMiddleware(history),
-];
-
-const historyReducer = connectRouter(history);
-
-export const rootReducer = combineReducers({
-  router: historyReducer,
-  snackbar: snackbarReducer,
-  theme: themeReducer,
-  game: gameReducer,
-});
+export const history = !isServer ? createBrowserHistory() : createMemoryHistory();
 
 export const defaultState = {
   snackbar: initialStateSnackBar,
   theme: initialStateTheme,
   game: initialGameState,
+  startGame: InitialStateStartGame,
 } as StoreProps;
 
-export const composeStore = (initialState: {}) => createStore(
-  rootReducer,
-  initialState,
-  composeWithDevTools(
-    applyMiddleware(...middlewares),
-  ),
+export const composeStore = (initialState: {}) => configureStore(
+  {
+    reducer: rootReducer(history),
+    preloadedState: initialState,
+    devTools: getReduxDevToolsOptions(),
+    middleware: middlewares(history),
+  },
 );
