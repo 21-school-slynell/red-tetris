@@ -46,5 +46,4 @@ export const WrapperGame: FC = memo(() => {
 
 const NullFC: FC = () => <></>;
 
-// export const Game = withAuth(!isServer ? WrapperGame : NullFC);
 export const Game = !isServer ? WrapperGame : NullFC;

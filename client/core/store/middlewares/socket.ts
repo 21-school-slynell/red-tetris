@@ -29,11 +29,11 @@ export const socketMiddleware = ({ dispatch, getState }: any) => {
 
   return (next: any) => (action: any) => {
     const {
-      startGame: { typeGame, name, isOpen },
+      startGame: { typeGame, name, isOpen, login },
     } = getState() as StoreProps;
 
     if (typeGame && !isOpen) {
-      socket.emit('join', { roomName: name, context: {} });
+      socket.emit('join', { room: name, login });
       next(changeOpenGame());
       next(push(`/game?name=${name}`));
     }

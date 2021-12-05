@@ -8,6 +8,7 @@ export class GameController {
 
     const nameRooms = (Array.from(rooms.keys()) as string[]).filter((name: string) => name.indexOf(PREFIX) === 0);
 
+    console.log(rooms);
     const result = {} as any;
 
     nameRooms.forEach((name) => {

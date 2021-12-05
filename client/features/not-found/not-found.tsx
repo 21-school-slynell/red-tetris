@@ -41,5 +41,4 @@ export const WrapperNotFound: FC = memo(() => {
 
 const NullFC: FC = () => <></>;
 
-// export const Game = withAuth(!isServer ? WrapperGame : NullFC);
 export const NotFound = !isServer ? WrapperNotFound : NullFC;

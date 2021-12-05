@@ -4,7 +4,7 @@ const cluster = require('cluster');
 const argv = require('minimist')(process.argv.slice(2));
 
 const {
-  host = 'http://localhost:8001',
+  host = 'http://localhost:8002',
   path = '/socket/',
   cookie = '',
   workers = 5,
@@ -36,7 +36,7 @@ if (cluster.isMaster) {
     });
 
     socket.on('connect', () => {
-      socket.emit('join', { roomName: cluster.worker.id % 3, context: {} });
+      socket.emit('join', { room: cluster.worker.id % 3, context: {}, login: cluster.worker.id });
       console.log(`worker ${cluster.worker.id}:`, 'connect');
     });
 
