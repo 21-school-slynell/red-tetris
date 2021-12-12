@@ -22,6 +22,7 @@ const useStyles = makeStyles((theme: Theme) => createStyles({
     width: '100%',
     maxWidth: '36ch',
     backgroundColor: theme.palette.background.paper,
+    overflow: 'hidden',
   },
   inline: {
     display: 'inline',
@@ -49,6 +50,7 @@ export default function UserList() {
     }
     return '';
   };
+
   const createListItem = (user: UserProps) => (
     <ListItem alignItems="flex-start">
       <ListItemAvatar>
@@ -62,13 +64,15 @@ export default function UserList() {
           <>
             <Typography
               component="span"
-              variant="body2"
+              variant="body1"
               className={classes.inline}
               color="textPrimary"
             >
               {'About me - '}
             </Typography>
-            {user?.description || 'introvert'}
+            <Typography variant="subtitle2" className={classes.inline}>
+              {user?.description || 'introvert'}
+            </Typography>
           </>
         )}
       />

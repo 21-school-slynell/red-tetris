@@ -1,5 +1,6 @@
 import { Server, Socket } from 'socket.io';
 import handlerJoin from './handlers/join';
+import handlerStart from './handlers/start';
 import handlerDisconnect from './handlers/disconnect';
 
 export type ContextProps = {
@@ -14,6 +15,7 @@ export function setupRoutes(io: Server) {
     const socketContext = { ...context, socket };
 
     socket.on('join', handlerJoin.bind(socketContext));
+    socket.on('start', handlerStart.bind(socketContext));
     socket.on('disconnect', handlerDisconnect.bind(socketContext));
   });
 }

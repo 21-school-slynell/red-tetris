@@ -9,10 +9,15 @@ export default function handle(payload: any, callback?: Function) {
 
   const room = `${PREFIX}${payload.room}`;
 
-  addUser({ ...payload, room, io, id: socket.id });
+  const { error } = addUser({ ...payload, room, io, id: socket.id });
+
+  if (error) {
+    socket.emit(NAME_EVENT.error, { error });
+    return;
+  }
 
   socket.join(room);
-  io.in(room).emit(NAME_EVENT.users, getUsers({ room, io }));
+  io.in(room).emit(NAME_EVENT.users, { users: getUsers({ room, io }), name: payload.room });
 
   if (callback) {
     callback({ result: true });

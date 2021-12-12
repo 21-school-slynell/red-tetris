@@ -6,7 +6,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { TextField } from '@material-ui/core';
 import PlayArrowIcon from '@material-ui/icons/PlayArrow';
 import { showSnackBarAction } from 'client/core/store';
-import { changeNameGame, changeTypeGame, getInitDataGame } from '../slice';
+import { changeNameGame, createGame, getInitDataGame } from '../slice';
 
 const useStyles = makeStyles((theme: Theme) => createStyles({
   root: {
@@ -37,8 +37,7 @@ export default function NewParty() {
 
   const handleClick = () => {
     if (name && login) {
-      dispatch(changeTypeGame('new-game'));
-      dispatch(changeTypeGame('new-game'));
+      dispatch(createGame());
     } else {
       dispatch(
         showSnackBarAction({

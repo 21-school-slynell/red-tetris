@@ -1,11 +1,11 @@
-import { Grid, makeStyles, Paper } from '@material-ui/core';
+import { makeStyles, Paper } from '@material-ui/core';
 import React, { FC, memo } from 'react';
 import { isServer } from 'client/core/store';
-import { useLocation } from 'react-router';
 import { push } from 'connected-react-router';
 import { useDispatch, useSelector } from 'react-redux';
 import { getInitDataGame } from '../home-page/slice';
-import UserList from './user-list/user-list';
+import { getIsStatusInitGame, getIsStatusStartGame } from './slice';
+import { InitGame } from './init-game/init-game';
 
 const useStyles = makeStyles({
   root: {
@@ -16,34 +16,31 @@ const useStyles = makeStyles({
     flexDirection: 'column',
     padding: 24,
   },
-  grid: {
-    display: 'grid',
-    gap: 16,
-  },
 });
 
 export const WrapperGame: FC = memo(() => {
   const classes = useStyles();
 
   const dispatch = useDispatch();
-  const { name: nameGame, login } = useSelector(getInitDataGame);
+  const { name, login } = useSelector(getInitDataGame);
+  const isInitGame = useSelector(getIsStatusInitGame);
+  const isStartGame = useSelector(getIsStatusStartGame);
 
-  if (!(nameGame && login)) {
+  if (!(name && login)) {
     dispatch(push('/not-found'));
   }
 
-  const location = useLocation();
-  const params = new URLSearchParams(location.search);
-  const name = params.get('name');
+  let content = null;
 
-  return (
-    <Paper className={classes.root}>
-      <Grid xs={12} md={6} className={classes.grid}>
-        {name}
-        <UserList />
-      </Grid>
-    </Paper>
-  );
+  if (isInitGame) {
+    content = <InitGame />;
+  }
+
+  if (isStartGame) {
+    content = <span>начало игры</span>;
+  }
+
+  return <Paper className={classes.root}>{content}</Paper>;
 });
 
 const NullFC: FC = () => <></>;

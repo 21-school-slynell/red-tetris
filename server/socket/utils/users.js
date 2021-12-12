@@ -3,7 +3,9 @@ export const addUser = ({ io, ...user }) => {
     // eslint-disable-next-line no-param-reassign
     io.users = [];
   }
-
+  if (io.users.find((obj) => obj.login === user.login)) {
+    return { error: 'Dublicate login' };
+  }
   io.users.push(user);
   return { user };
 };

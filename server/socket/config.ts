@@ -1,5 +1,8 @@
 export const NAME_EVENT = {
   users: 'users',
+  start: 'start',
+  error: 'error',
+  join: 'join',
 };
 
 export const createUserEventStatus = (userId: string, error: string) => {

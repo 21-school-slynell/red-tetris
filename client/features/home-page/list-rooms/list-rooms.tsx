@@ -11,7 +11,7 @@ import PlayArrowIcon from '@material-ui/icons/PlayArrow';
 import { useDispatch, useSelector } from 'react-redux';
 import { gameSelector, showSnackBarAction } from 'client/core/store';
 import { Widgets } from '@material-ui/icons';
-import { changeNameGame, changeTypeGame, getInitDataGame } from '../slice';
+import { changeNameGame, getInitDataGame, joinGame } from '../slice';
 
 const useStyles = makeStyles((theme: Theme) => createStyles({
   root: {
@@ -36,8 +36,7 @@ export default function ListRooms() {
   const handleClick = (name: string) => () => {
     if (login) {
       dispatch(changeNameGame(name));
-      dispatch(changeTypeGame('existing-games'));
-      dispatch(changeTypeGame('existing-games'));
+      dispatch(joinGame());
     } else {
       dispatch(
         showSnackBarAction({
