@@ -8,7 +8,13 @@ import ListItemAvatar from '@material-ui/core/ListItemAvatar';
 import Avatar from '@material-ui/core/Avatar';
 import Typography from '@material-ui/core/Typography';
 import { useSelector } from 'react-redux';
-import { UserProps } from 'client/features/home-page/slice';
+import {
+  getCurrentLoginUser,
+  UserProps,
+} from 'client/features/home-page/slice';
+import StarIcon from '@material-ui/icons/Star';
+import AccountCircleIcon from '@material-ui/icons/AccountCircle';
+import { yellow } from '@material-ui/core/colors';
 import { getUsers } from '../slice';
 
 const useStyles = makeStyles((theme: Theme) => createStyles({
@@ -20,17 +26,35 @@ const useStyles = makeStyles((theme: Theme) => createStyles({
   inline: {
     display: 'inline',
   },
+  star: {
+    backgroundColor: yellow[500],
+  },
+  selected: {
+    backgroundColor: theme.palette.primary.main,
+  },
 }));
 
 export default function UserList() {
   const classes = useStyles();
 
   const users = useSelector(getUsers) as UserProps[];
+  const login = useSelector(getCurrentLoginUser);
 
+  const getClassName = (user: UserProps) => {
+    if (user.isLeader) {
+      return classes.star;
+    }
+    if (user.login === login) {
+      return classes.selected;
+    }
+    return '';
+  };
   const createListItem = (user: UserProps) => (
     <ListItem alignItems="flex-start">
       <ListItemAvatar>
-        <Avatar />
+        <Avatar className={getClassName(user)}>
+          {user.isLeader ? <StarIcon /> : <AccountCircleIcon />}
+        </Avatar>
       </ListItemAvatar>
       <ListItemText
         primary={user.login}

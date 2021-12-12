@@ -55,3 +55,4 @@ export const {
   changeDescription,
 } = slice.actions;
 export const getInitDataGame = (store: StoreProps) => store.homePage;
+export const getCurrentLoginUser = (store: StoreProps) => store.homePage.login;
