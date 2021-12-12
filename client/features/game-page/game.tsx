@@ -6,6 +6,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { getInitDataGame } from '../home-page/slice';
 import { getIsStatusInitGame, getIsStatusStartGame } from './slice';
 import { InitGame } from './init-game/init-game';
+import { Playing } from './palying/playing';
 
 const useStyles = makeStyles({
   root: {
@@ -37,7 +38,7 @@ export const WrapperGame: FC = memo(() => {
   }
 
   if (isStartGame) {
-    content = <span>начало игры</span>;
+    content = <Playing />;
   }
 
   return <Paper className={classes.root}>{content}</Paper>;

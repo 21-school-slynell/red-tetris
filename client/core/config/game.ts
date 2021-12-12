@@ -8,3 +8,6 @@ export const STATE_GAME = {
   START: 'start',
   FINISH: 'finish',
 };
+
+// скорость опускания вниз фигурки мс
+export const SPEED_DOWN = 1500;
