@@ -4,7 +4,8 @@ import { isServer } from 'client/core/store';
 import { useLocation } from 'react-router';
 import { push } from 'connected-react-router';
 import { useDispatch, useSelector } from 'react-redux';
-import { getInitDataGame } from '../start-game/slice';
+import { getInitDataGame } from '../home-page/slice';
+import UserList from './user-list/user-list';
 
 const useStyles = makeStyles({
   root: {
@@ -39,6 +40,7 @@ export const WrapperGame: FC = memo(() => {
     <Paper className={classes.root}>
       <Grid xs={12} md={6} className={classes.grid}>
         {name}
+        <UserList />
       </Grid>
     </Paper>
   );

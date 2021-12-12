@@ -8,11 +8,26 @@ export const addUser = ({ io, ...user }) => {
   return { user };
 };
 
-export const getUser = ({ socket, io }) => io.users.find((user) => user.id === socket.id);
-
-export const deleteUser = ({ socket, io }) => {
-  const index = io.users.findIndex((user) => user.id === socket.id);
-  if (index !== -1) return io.users.splice(index, 1)[0];
+export const getUser = ({ socket, io }) => {
+  if (io.users && io.users.length) {
+    return io.users.find((user) => user.id === socket.id);
+  }
+  return [];
 };
 
-export const getUsers = ({ room, io }) => io.users.filter((user) => user.room === room);
+export const deleteUser = ({ socket, io }) => {
+  if (io.users && io.users.length) {
+    const index = io.users.findIndex((user) => user.id === socket.id);
+    if (index !== -1) {
+      return io.users.splice(index, 1)[0];
+    }
+  }
+  return [];
+};
+
+export const getUsers = ({ room, io }) => {
+  if (io.users && io.users.length) {
+    return io.users.filter((user) => user.room === room);
+  }
+  return [];
+};

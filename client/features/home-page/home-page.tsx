@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { getStatusRooms } from '@core/store';
 import { isServer } from 'client/core/store';
 import AccordionGame from './accordion/accordion';
-import { changeLogin, getInitDataGame } from './slice';
+import { changeDescription, changeLogin, getInitDataGame } from './slice';
 
 const useStyles = makeStyles({
   root: {
@@ -21,10 +21,10 @@ const useStyles = makeStyles({
   },
 });
 
-export const WrapperGame: FC = memo(() => {
+export const WrapperHomePage: FC = memo(() => {
   const classes = useStyles();
 
-  const { login } = useSelector(getInitDataGame);
+  const { login, description } = useSelector(getInitDataGame);
 
   const dispatch = useDispatch();
 
@@ -34,10 +34,19 @@ export const WrapperGame: FC = memo(() => {
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const {
-      target: { value },
+      target: { value, name },
     } = event;
 
-    dispatch(changeLogin(value));
+    switch (name) {
+    case 'login':
+      dispatch(changeLogin(value));
+      break;
+    case 'description':
+      dispatch(changeDescription(value));
+      break;
+    default:
+      break;
+    }
   };
 
   return (
@@ -46,10 +55,19 @@ export const WrapperGame: FC = memo(() => {
         <TextField
           variant="outlined"
           fullWidth
-          name="name"
+          name="login"
           label="login"
           placeholder="enter your login"
           value={login}
+          onChange={handleChange}
+        />
+        <TextField
+          variant="outlined"
+          fullWidth
+          name="description"
+          label="description"
+          placeholder="tell me something about yourself"
+          value={description}
           onChange={handleChange}
         />
         <AccordionGame />
@@ -60,5 +78,4 @@ export const WrapperGame: FC = memo(() => {
 
 const NullFC: FC = () => <></>;
 
-// export const Game = withAuth(!isServer ? WrapperGame : NullFC);
-export const StartGame = !isServer ? WrapperGame : NullFC;
+export const HomePage = !isServer ? WrapperHomePage : NullFC;

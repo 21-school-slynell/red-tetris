@@ -1,12 +1,12 @@
 import { NotFound } from 'client/features/not-found/not-found';
-import { Game } from 'client/features/game/game';
-import { StartGame } from 'client/features/start-game/start-game';
+import { Game } from 'client/features/game-page/game';
+import { HomePage } from 'client/features/home-page/home-page';
 import { PAGES, RouteType } from './Routing.types';
 
 export const ROUTES: Record<PAGES, RouteType> = {
   home: {
     path: '/',
-    component: StartGame,
+    component: HomePage,
     name: 'home',
   },
   game: {
