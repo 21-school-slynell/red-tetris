@@ -1,19 +1,18 @@
 import { debounce } from '@material-ui/core/utils';
 import { SPEED_DOWN } from 'client/core/config/game';
 import { KeyboardEvent, useEffect, useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { pressedKey } from '../slice';
 
 export function useKeyPress() {
   const [keyPressed, setKeyPressed] = useState<string | undefined>(undefined);
+  const dispatch = useDispatch();
 
   let interval: NodeJS.Timer;
 
-  const downHandler = ({ code }: KeyboardEvent) => {
-    setKeyPressed(code);
-  };
+  const downHandler = ({ code }: KeyboardEvent) => setKeyPressed(code);
 
-  const upHandler = () => {
-    setKeyPressed(undefined);
-  };
+  const upHandler = () => setKeyPressed(undefined);
 
   useEffect(() => {
     // @ts-ignore
@@ -21,7 +20,7 @@ export function useKeyPress() {
     window.addEventListener('keyup', upHandler);
 
     interval = setInterval(() => {
-      setKeyPressed('down');
+      dispatch(pressedKey('ArrowDown'));
     }, SPEED_DOWN);
 
     return () => {

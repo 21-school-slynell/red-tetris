@@ -1,7 +1,11 @@
 import { Server, Socket } from 'socket.io';
-import handlerJoin from './handlers/join';
-import handlerStart from './handlers/start';
-import handlerDisconnect from './handlers/disconnect';
+import { NAME_EVENT } from './config';
+import {
+  handlerJoin,
+  handlerStart,
+  handlerDisconnect,
+  handlerPressKey,
+} from './handlers';
 
 export type ContextProps = {
   socket: Socket,
@@ -14,8 +18,9 @@ export function setupRoutes(io: Server) {
   io.on('connection', (socket) => {
     const socketContext = { ...context, socket };
 
-    socket.on('join', handlerJoin.bind(socketContext));
-    socket.on('start', handlerStart.bind(socketContext));
+    socket.on(NAME_EVENT.join, handlerJoin.bind(socketContext));
+    socket.on(NAME_EVENT.start, handlerStart.bind(socketContext));
+    socket.on(NAME_EVENT.pressKey, handlerPressKey.bind(socketContext));
     socket.on('disconnect', handlerDisconnect.bind(socketContext));
   });
 }

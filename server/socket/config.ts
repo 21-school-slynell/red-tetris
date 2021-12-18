@@ -3,6 +3,8 @@ export const NAME_EVENT = {
   start: 'start',
   error: 'error',
   join: 'join',
+  pressKey: 'pressKey',
+  board: 'board',
 };
 
 export const createUserEventStatus = (userId: string, error: string) => {

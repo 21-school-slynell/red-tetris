@@ -3,7 +3,7 @@ import { push } from 'connected-react-router';
 import { NAME_EVENT } from 'server/socket/config';
 import { changeOpenGame, createGame, joinGame } from 'client/features/home-page/slice';
 import { STATE_GAME } from 'client/core/config/game';
-import { changeStatusGame, setStartGame, setUsers } from 'client/features/game-page/slice';
+import { changeStatusGame, pressedKey, setBoard, setKey, setStartGame, setUsers } from 'client/features/game-page/slice';
 import { StoreProps } from '../store.types';
 import { showSnackBarAction } from '..';
 
@@ -13,9 +13,21 @@ const handlerSetUsers = (dispatch: any) => ({ users, name }: any) => {
   dispatch(setUsers(users));
 };
 
-const handlerStartGame = (dispatch: any) => () => dispatch(changeStatusGame(STATE_GAME.START));
+const handlerStartGame = (dispatch: any) => () => {
+  dispatch(changeStatusGame(STATE_GAME.START));
+};
 
-const handlerError = (dispatch: any) => ({ error }: any) => dispatch(showSnackBarAction({ type: 'error', msg: error }));
+const handlerError = (dispatch: any) => ({ error }: any) => {
+  dispatch(showSnackBarAction({ type: 'error', msg: error }));
+};
+
+const handlerKeyPress = (dispatch: any) => (payload: any) => {
+  dispatch(setKey(payload));
+};
+
+const handlerBoard = (dispatch: any) => (payload: any) => {
+  dispatch(setBoard(payload));
+};
 
 export const socketMiddleware = ({ dispatch, getState }: any) => {
   const socket = createSocketClient(
@@ -26,6 +38,8 @@ export const socketMiddleware = ({ dispatch, getState }: any) => {
         [NAME_EVENT.users]: handlerSetUsers(dispatch),
         [NAME_EVENT.start]: handlerStartGame(dispatch),
         [NAME_EVENT.error]: handlerError(dispatch),
+        [NAME_EVENT.pressKey]: handlerKeyPress(dispatch),
+        [NAME_EVENT.board]: handlerBoard(dispatch),
       },
     },
   );
@@ -50,6 +64,10 @@ export const socketMiddleware = ({ dispatch, getState }: any) => {
 
     if (action.type === setStartGame.type) {
       socket.emit(NAME_EVENT.start, { room: name });
+    }
+
+    if (action.type === pressedKey.type) {
+      socket.emit(NAME_EVENT.pressKey, { key: action.payload });
     }
     next(action);
   };

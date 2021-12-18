@@ -126,6 +126,7 @@
         "@reduxjs/toolkit": "^1.6.2",
         "@svgr/cli": "^5.5.0",
         "@svgr/webpack": "^5.5.0",
+        "clsx": "^1.1.1",
         "connected-react-router": "6.9.1",
         "cookie-parser": "1.4.5",
         "core-js": "3.16.0",
