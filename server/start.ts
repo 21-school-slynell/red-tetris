@@ -5,7 +5,7 @@ import 'regenerator-runtime/runtime';
 // У nodejs нет FormData, необходимо для нормальной работы POST запросов а API Express
 (global as any).FormData = FormData;
 
-const PORT = Number(process.env.PORT) || 8002;
+const PORT = Number(process.env.PORT) || 8033;
 
 const ExpressServer = new Server();
 

@@ -36,7 +36,7 @@ if (cluster.isMaster) {
     });
 
     socket.on('connect', () => {
-      socket.emit('join', { room: cluster.worker.id % 3, context: {}, login: cluster.worker.id });
+      socket.emit('join', { roomName: cluster.worker.id % 3, context: {}, login: cluster.worker.id });
       console.log(`worker ${cluster.worker.id}:`, 'connect');
     });
 

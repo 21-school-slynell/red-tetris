@@ -51,7 +51,7 @@ export const WrapperHomePage: FC = memo(() => {
 
   return (
     <Paper className={classes.root}>
-      <Grid xs={12} md={6} className={classes.grid}>
+      <Grid item xs={12} md={6} className={classes.grid}>
         <TextField
           variant="outlined"
           fullWidth

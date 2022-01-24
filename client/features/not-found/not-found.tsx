@@ -23,7 +23,7 @@ export const WrapperNotFound: FC = memo(() => {
 
   return (
     <Paper className={classes.root}>
-      <Grid xs={12} md={12} className={classes.grid}>
+      <Grid item xs={12} md={12} className={classes.grid}>
         <Typography variant="h5" align="center">
           Unfortunately, the game has not been found for you
         </Typography>

@@ -13,7 +13,7 @@ import {
 import clsx from 'clsx';
 import React, { FC, memo } from 'react';
 import { useSelector } from 'react-redux';
-import { BOARD } from '../../../../../server/config/board';
+import { BOARD } from '../../../../../server/socket/config/board';
 import { getGamePageData } from '../../slice';
 
 const useStyles = makeStyles((theme: Theme) => createStyles({

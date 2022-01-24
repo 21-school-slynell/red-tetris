@@ -32,7 +32,7 @@ export const WrapperGame: FC = memo(() => {
   };
 
   return (
-    <Grid xs={12} md={6} className={classes.grid}>
+    <Grid item xs={12} md={6} className={classes.grid}>
       <Typography align="center" variant="h6">
         {name}
       </Typography>

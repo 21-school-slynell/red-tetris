@@ -1,5 +1,5 @@
-import { BOARD } from 'server/config/board';
-import { CEIL_TYPES } from 'server/config/cell-types';
+import { BOARD } from 'server/socket/config/board';
+import { CEIL_TYPES } from 'server/socket/config/cell-types';
 import { Piece } from './piece';
 
 export class Board {
@@ -24,6 +24,15 @@ export class Board {
         }
       }
     }
+  }
+
+  isFilled() {
+    for (let i = 0; i < BOARD.COL; i += 1) {
+      if (this.board[0][i] !== '') {
+        return true;
+      }
+    }
+    return false;
   }
 
   static createMap() {

@@ -42,7 +42,9 @@ const CONFIG = [
 
 export default function AccordionGame() {
   const classes = useStyles();
-  const [expanded, setExpanded] = React.useState<string | false>(CONFIG[0].name);
+  const [expanded, setExpanded] = React.useState<string | false>(
+    CONFIG[0].name,
+  );
 
   const handleChange = (panel: string) => (event: React.ChangeEvent<{}>, isExpanded: boolean) => {
     setExpanded(isExpanded ? panel : false);
@@ -52,6 +54,7 @@ export default function AccordionGame() {
     <div className={classes.root}>
       {CONFIG.map((config) => (
         <Accordion
+          key={`${config.name}-key`}
           expanded={expanded === config.name}
           onChange={handleChange(config.name)}
         >
@@ -69,7 +72,7 @@ export default function AccordionGame() {
           </AccordionSummary>
           <AccordionDetails>{config.component}</AccordionDetails>
         </Accordion>
-                ))}
+      ))}
     </div>
   );
 }

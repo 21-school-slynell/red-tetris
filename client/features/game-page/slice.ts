@@ -2,7 +2,7 @@
 import { createSlice, createAction } from '@reduxjs/toolkit';
 import { STATE_GAME } from 'client/core/config/game';
 import { StoreProps } from 'client/core/store';
-import { PieceSerializeProps } from 'server/essence/piece';
+import { PieceSerializeProps } from 'server/socket/models/piece';
 import { getCurrentLoginUser, UserProps } from '../home-page/slice';
 
 export const NAMESPACE = 'game-page';

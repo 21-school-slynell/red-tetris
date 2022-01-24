@@ -53,17 +53,17 @@ export const socketMiddleware = ({ dispatch, getState }: any) => {
 
     // Логика создания/подключения пользователя к игре
     if (action.type === createGame.type) {
-      const user = { room: name, login, description, isLeader: true };
+      const user = { roomName: name, login, description, isLeader: true };
       socket.emit(NAME_EVENT.join, user);
     }
 
     if (action.type === joinGame.type) {
-      const user = { room: name, login, description, isLeader: false };
+      const user = { roomName: name, login, description, isLeader: false };
       socket.emit(NAME_EVENT.join, user);
     }
 
     if (action.type === setStartGame.type) {
-      socket.emit(NAME_EVENT.start, { room: name });
+      socket.emit(NAME_EVENT.start, { roomName: name });
     }
 
     if (action.type === pressedKey.type) {

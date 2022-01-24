@@ -1,8 +1,8 @@
 import { getRandomInt } from 'client/utils/random';
-import { BOARD } from 'server/config/board';
-import { CEIL_TYPES } from 'server/config/cell-types';
-import { COLORS } from 'server/config/colors';
-import { pieces } from 'server/config/pieces';
+import { BOARD } from 'server/socket/config/board';
+import { CEIL_TYPES } from 'server/socket/config/cell-types';
+import { COLORS } from 'server/socket/config/colors';
+import { pieces } from 'server/socket/config/pieces';
 import { Board } from './board';
 
 export type PieceSerializeProps = {
@@ -10,7 +10,21 @@ export type PieceSerializeProps = {
   color: string;
 };
 
-class Piece {
+type KeyType = 'ArrowLeft' | 'ArrowRight' | 'ArrowDown' | 'ArrowUp' | 'Space';
+
+interface IPiece {
+  blocks: number[][];
+
+  y: number;
+
+  x: number;
+
+  color: string;
+
+  isDown: boolean;
+}
+
+class Piece implements IPiece {
   blocks: number[][];
 
   y: number;
@@ -56,26 +70,18 @@ class Piece {
     return piecs;
   }
 
-  move(
-    board: Board,
-    key: 'ArrowLeft' | 'ArrowRight' | 'ArrowDown' | 'ArrowUp' | 'Space',
-  ) {
+  move(board: Board, key: KeyType) {
     switch (key) {
     case 'ArrowDown':
-      this.moveDown(board, true);
-      break;
+      return this.moveDown(board, true);
     case 'ArrowLeft':
-      this.moveLeft(board, true);
-      break;
+      return this.moveLeft(board, true);
     case 'ArrowRight':
-      this.moveRight(board, true);
-      break;
+      return this.moveRight(board, true);
     case 'ArrowUp':
-      this.rotate(board);
-      break;
+      return this.rotate(board);
     case 'Space':
-      this.down(board);
-      break;
+      return this.down(board);
     default:
       break;
     }
@@ -131,6 +137,7 @@ class Piece {
     }
 
     this.blocks = rotateBlocks;
+
     if (!(this.moveDown(board, false)
       && this.moveLeft(board, false)
       && this.moveRight(board, false))) {
@@ -144,7 +151,6 @@ class Piece {
         if (blocks[i][j] === CEIL_TYPES.FILLED) {
           const x1 = j + x;
           const y1 = i + y;
-          console.log(x1, y1);
           if (x1 < 0 || x1 >= BOARD.COL || y1 < 0 || y1 >= BOARD.ROW || board.board[y1][x1] !== '') {
             return true;
           }
@@ -172,3 +178,4 @@ class Piece {
 }
 
 export { Piece };
+export type { IPiece };
