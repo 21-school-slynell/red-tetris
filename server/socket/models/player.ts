@@ -41,7 +41,7 @@ class Player implements IPlayer {
     this.status = PLAYER_STATUSES.WAITING;
     this.roomName = roomName;
     this.score = 0;
-    this.pieces = pieces;
+    this.pieces = pieces.map((piece) => Piece.copy(piece));
     this.placedPiecesCount = 0;
     this.board = new Board();
     // this.board = new Board(rows, columns);

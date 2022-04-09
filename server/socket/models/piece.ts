@@ -43,6 +43,16 @@ class Piece implements IPiece {
     this.isDown = false;
   }
 
+  static copy(piece: Piece): Piece {
+    const temp = new Piece();
+    temp.blocks = piece.blocks;
+    temp.color = piece.color;
+    temp.y = 0;
+    temp.x = 0;
+    temp.isDown = false;
+    return temp;
+  }
+
   getBorder() {
     let height = 0;
     let width = 0;

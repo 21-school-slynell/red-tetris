@@ -14,6 +14,7 @@ export type GamePageProps = {
   key?: string;
   piece?: PieceSerializeProps;
   board?: PieceSerializeProps[];
+  usersBoard: Record<string, PieceSerializeProps[]>;
 };
 
 export const pressedKey = createAction(`${NAMESPACE}/pressedKey`, (key: string) => ({ payload: key }));
@@ -23,6 +24,7 @@ export const initialState: GamePageProps = {
   command: undefined,
   state: STATE_GAME.INIT,
   key: undefined,
+  usersBoard: {},
 };
 
 const slice = createSlice({
@@ -34,6 +36,9 @@ const slice = createSlice({
     },
     setBoard: (state, action) => {
       state.board = action.payload;
+    },
+    setUsersBoard: (state, { payload }) => {
+      state.usersBoard[payload.user] = payload.board;
     },
     setStartGame: (state) => {
       state.state = STATE_GAME.START;
@@ -64,6 +69,7 @@ export const {
   setBoard,
   changeStatusGame,
   setKey,
+  setUsersBoard,
 } = slice.actions;
 
 export const getGamePageData = (store: StoreProps) => store.gamePage;

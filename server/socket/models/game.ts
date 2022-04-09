@@ -17,7 +17,7 @@ class Game {
   constructor(roomName: string) {
     this.roomName = roomName;
     this.players = [];
-    this.pieces = Piece.generatePieces(3);
+    this.pieces = Piece.generatePieces(10);
   }
 
   get activePlayers() {

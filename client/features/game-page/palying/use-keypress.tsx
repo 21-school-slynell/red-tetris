@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { debounce } from '@material-ui/core/utils';
 import { SPEED_DOWN } from 'client/core/config/game';
 import { KeyboardEvent, useEffect, useState } from 'react';

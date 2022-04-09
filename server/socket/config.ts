@@ -5,6 +5,7 @@ export const NAME_EVENT = {
   join: 'join',
   pressKey: 'pressKey',
   board: 'board',
+  update: 'update',
 };
 
 export const createUserEventStatus = (userId: string, error: string) => {

@@ -10,7 +10,7 @@ import { Playing } from './palying/playing';
 
 const useStyles = makeStyles({
   root: {
-    maxHeight: 1000,
+    maxHeight: 800,
     minHeight: 600,
     display: 'flex',
     position: 'relative',

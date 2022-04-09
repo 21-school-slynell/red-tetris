@@ -22,15 +22,22 @@
         "url": "https://github.com/kilkeny/blur/issues"
     },
     "jest": {
-        "moduleNameMapper": {
-            "^@components/(.+)": "<rootDir>/src/components/$1",
-            "^@pages/(.+)": "<rootDir>/src/pages/$1",
-            "^@core/(.+)": "<rootDir>/src/core/$1"
+        "transform": {
+          "^.+\\.tsx?$": "ts-jest"
         },
-        "testMatch": [
-            "**/?(*.)(c|)spec.js"
+        "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+        "moduleFileExtensions": [
+          "ts",
+          "tsx",
+          "js",
+          "jsx",
+          "json",
+          "node"
+        ],
+        "setupFiles": [
+          "<rootDir>/test/setupTests.ts"
         ]
-    },
+      },
     "homepage": "https://github.com/kilkeny/blur#readme",
     "devDependencies": {
         "@babel/core": "7.14.5",

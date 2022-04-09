@@ -12,9 +12,8 @@ import {
 } from '@material-ui/core/colors';
 import clsx from 'clsx';
 import React, { FC, memo } from 'react';
-import { useSelector } from 'react-redux';
+import { PieceSerializeProps } from 'server/socket/models/piece';
 import { BOARD } from '../../../../../server/socket/config/board';
-import { getGamePageData } from '../../slice';
 
 const useStyles = makeStyles((theme: Theme) => createStyles({
   root: {
@@ -29,11 +28,11 @@ const useStyles = makeStyles((theme: Theme) => createStyles({
     display: 'grid',
     gap: 16,
   },
-  ceil: {
+  ceil: ({ isSmall }: any) => ({
     border: `1px solid ${theme.palette.divider}`,
-    width: 22,
-    height: 22,
-  },
+    width: isSmall ? 12 : 22,
+    height: isSmall ? 12 : 22,
+  }),
   selected: {
     boxShadow: 'inset 0px 0px 3px 2px rgb(0 0 0, 0.05)',
   },
@@ -69,9 +68,13 @@ const useStyles = makeStyles((theme: Theme) => createStyles({
   },
 }));
 
-export const Board: FC = memo(() => {
-  const classes = useStyles();
-  const { piece, board = [] } = useSelector(getGamePageData);
+type BoardProps = {
+  board: PieceSerializeProps[];
+  isSmall?: boolean;
+};
+
+export const Board: FC<BoardProps> = memo(({ board, isSmall = true }) => {
+  const classes = useStyles({ isSmall });
 
   const styleCells = (rowId: number, colId: number) => {
     let isSelected = false;
@@ -79,7 +82,7 @@ export const Board: FC = memo(() => {
       [classes.ceil]: true,
     };
 
-    [...board, piece].forEach((block) => {
+    board.forEach((block) => {
       if (!isSelected && block?.data[rowId]?.includes(colId)) {
         isSelected = block?.data[rowId]?.includes(colId);
 
@@ -96,11 +99,15 @@ export const Board: FC = memo(() => {
 
   const createRow = (rowId: number) => Array(BOARD.COL)
     .fill(0)
-    .map((_, colId) => <div className={clsx(styleCells(rowId, colId))} />);
+    .map((_, colId) => (
+      <div className={clsx(styleCells(rowId, colId))} />
+    ));
 
   const boardComponent = Array(BOARD.ROW)
     .fill(0)
-    .map((_, rowId) => <div className={classes.row}>{createRow(rowId)}</div>);
+    .map((_, rowId) => (
+      <div className={classes.row}>{createRow(rowId)}</div>
+    ));
 
   return <div>{boardComponent}</div>;
 });

@@ -3,7 +3,7 @@ import { NAME_EVENT } from '../config';
 
 export default function handle({ key }: any, callback?: Function) {
   // @ts-ignore
-  const { socketContext: { socket }, gameController } = this as ContextProps;
+  const { socketContext: { socket, io }, gameController } = this as ContextProps;
   const { id } = socket;
   const player = gameController.getPlayer(id);
   const game = gameController.getGame(player?.roomName || '');
@@ -18,6 +18,13 @@ export default function handle({ key }: any, callback?: Function) {
         board.setPiece(piece);
         pieces.pop();
         socket.emit(NAME_EVENT.board, board.serialize());
+
+        // Делаем оповещение всем остальным игрокам какое состояние доски и их соперника
+        io.in(player?.roomName || '').emit(NAME_EVENT.update, {
+          user: player.login,
+          board: board.serialize(),
+        });
+
         piece = pieces[pieces.length - 1];
       }
 

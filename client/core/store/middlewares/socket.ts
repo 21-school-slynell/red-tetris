@@ -3,7 +3,7 @@ import { push } from 'connected-react-router';
 import { NAME_EVENT } from 'server/socket/config';
 import { changeOpenGame, createGame, joinGame } from 'client/features/home-page/slice';
 import { STATE_GAME } from 'client/core/config/game';
-import { changeStatusGame, pressedKey, setBoard, setKey, setStartGame, setUsers } from 'client/features/game-page/slice';
+import { changeStatusGame, pressedKey, setBoard, setKey, setStartGame, setUsers, setUsersBoard } from 'client/features/game-page/slice';
 import { StoreProps } from '../store.types';
 import { showSnackBarAction } from '..';
 
@@ -29,6 +29,10 @@ const handlerBoard = (dispatch: any) => (payload: any) => {
   dispatch(setBoard(payload));
 };
 
+const handlerUsersBoard = (dispatch: any) => (payload: any) => {
+  dispatch(setUsersBoard(payload));
+};
+
 export const socketMiddleware = ({ dispatch, getState }: any) => {
   const socket = createSocketClient(
     {
@@ -40,6 +44,7 @@ export const socketMiddleware = ({ dispatch, getState }: any) => {
         [NAME_EVENT.error]: handlerError(dispatch),
         [NAME_EVENT.pressKey]: handlerKeyPress(dispatch),
         [NAME_EVENT.board]: handlerBoard(dispatch),
+        [NAME_EVENT.update]: handlerUsersBoard(dispatch),
       },
     },
   );
