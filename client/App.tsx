@@ -2,11 +2,12 @@ import React, { FC, memo, useEffect } from 'react';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import { ThemeProvider } from '@material-ui/core/styles';
 import { Container } from '@material-ui/core';
-import { Routing } from '@components/Routing';
 import { useSelector } from 'react-redux';
 import { snackbarSelector, themeSelector } from '@core/store';
 import { SnackBar } from '@components/SnackBar';
 import { globalThemeOverride } from './globalThemeOverride';
+import { Header } from './components/Header';
+import { Routing } from './components/Routing';
 
 export const App: FC = memo(() => {
   const snackBar = useSelector(snackbarSelector);
@@ -24,6 +25,7 @@ export const App: FC = memo(() => {
       <CssBaseline />
       <SnackBar open={snackBar.isVisible} {...snackBar} />
       <Container fixed maxWidth={false}>
+        <Header />
         <Routing />
       </Container>
     </ThemeProvider>

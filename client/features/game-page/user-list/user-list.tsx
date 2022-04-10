@@ -63,7 +63,6 @@ export default function UserList() {
         secondary={(
           <>
             <Typography
-              component="span"
               variant="body1"
               className={classes.inline}
               color="textPrimary"

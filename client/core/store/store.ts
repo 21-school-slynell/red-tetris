@@ -1,4 +1,4 @@
-import { createBrowserHistory, createMemoryHistory } from 'history';
+import { createHashHistory, createMemoryHistory } from 'history';
 import { configureStore } from '@reduxjs/toolkit';
 import { initialState as InitialStateHomePage } from 'client/features/home-page/slice';
 import { initialState as InitialStateGamePage } from 'client/features/game-page/slice';
@@ -12,7 +12,7 @@ import { middlewares } from './middlewares';
 
 export const isServer = !(typeof window !== 'undefined' && window?.document && window?.document?.createElement);
 
-export const history = !isServer ? createBrowserHistory() : createMemoryHistory();
+export const history = !isServer ? createHashHistory({ basename: '', hashType: 'noslash' }) : createMemoryHistory();
 
 export const defaultState = {
   snackbar: initialStateSnackBar,

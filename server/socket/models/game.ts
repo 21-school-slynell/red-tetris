@@ -17,11 +17,15 @@ class Game {
   constructor(roomName: string) {
     this.roomName = roomName;
     this.players = [];
-    this.pieces = Piece.generatePieces(10);
+    this.pieces = Piece.generatePieces(1000);
   }
 
   get activePlayers() {
     return this.players.filter((player) => player.status !== PLAYER_STATUSES.LEFT);
+  }
+
+  isFinish() {
+    return this.activePlayers.find((player) => player.status !== PLAYER_STATUSES.FINISHED);
   }
 
   isEmpty() {
@@ -67,7 +71,7 @@ class Game {
         status: player.status,
         score: player.score,
         isLeader: player.isLeader,
-        // boardSpectrum: player?.board.getSpectrum(),
+        description: player?.description,
       }))
       .sort((a, b) => (a.isLeader > b.isLeader || a.login - b.login ? -1 : 1));
   }

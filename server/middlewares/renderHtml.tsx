@@ -38,7 +38,6 @@ function getPageHtml({ html, state, helmet, css }: PageHtmlProps) {
                     }}
         />
         <script src={`/${STATIC_DIR}/main.js`} />
-        <script src="/start_sw.js" />
       </body>
     </html>,
   );

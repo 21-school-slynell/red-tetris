@@ -107,7 +107,9 @@ class Piece implements IPiece {
       if (isStep) { this.y += 1; }
       return true;
     }
-    this.isDown = true;
+    if (this.y - this.getBorder().height >= 0) {
+      this.isDown = true;
+    }
     return false;
   }
 
@@ -148,9 +150,10 @@ class Piece implements IPiece {
 
     this.blocks = rotateBlocks;
 
-    if (!(this.moveDown(board, false)
-      && this.moveLeft(board, false)
-      && this.moveRight(board, false))) {
+    if (!(
+      this.moveLeft(board, false)
+      && this.moveRight(board, false)
+      && this.moveDown(board, false))) {
       this.blocks = blocks;
     }
   }

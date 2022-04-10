@@ -1,8 +1,7 @@
 import { makeStyles, Paper } from '@material-ui/core';
 import React, { FC, memo } from 'react';
 import { isServer } from 'client/core/store';
-import { push } from 'connected-react-router';
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 import { getInitDataGame } from '../home-page/slice';
 import { getIsStatusInitGame, getIsStatusStartGame } from './slice';
 import { InitGame } from './init-game/init-game';
@@ -22,13 +21,12 @@ const useStyles = makeStyles({
 export const WrapperGame: FC = memo(() => {
   const classes = useStyles();
 
-  const dispatch = useDispatch();
   const { name, login } = useSelector(getInitDataGame);
   const isInitGame = useSelector(getIsStatusInitGame);
   const isStartGame = useSelector(getIsStatusStartGame);
 
   if (!(name && login)) {
-    dispatch(push('/not-found'));
+    window.location.assign('#not-found');
   }
 
   let content = null;

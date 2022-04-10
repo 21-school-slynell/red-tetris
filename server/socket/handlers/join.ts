@@ -7,7 +7,7 @@ import { Player } from '../models/player';
 export default function handle(payload: any, callback?: Function) {
   // @ts-ignore
   const { socketContext: { socket, io }, gameController } = this as ContextProps;
-  const { login } = payload;
+  const { login, description } = payload;
 
   const roomName = `${PREFIX}${payload.roomName}`;
 
@@ -17,7 +17,7 @@ export default function handle(payload: any, callback?: Function) {
 
   const game = gameController.getGame(roomName);
   if (game) {
-    const player = new Player(socket.id, login, roomName, game?.pieces);
+    const player = new Player(socket.id, login, description, roomName, game?.pieces);
 
     gameController.addPlayer(player);
     game.connectPlayer(player);
@@ -26,6 +26,8 @@ export default function handle(payload: any, callback?: Function) {
     io.in(roomName).emit(NAME_EVENT.users, {
       users: game.getPlayersList(),
       name: payload.roomName,
+      login,
+      id: player.id,
     });
   }
 

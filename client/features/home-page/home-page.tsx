@@ -19,11 +19,15 @@ const useStyles = makeStyles({
     display: 'grid',
     gap: 16,
   },
+  input: {
+    '&:invalid': {
+      border: 'red solid 2px',
+    },
+  },
 });
 
 export const WrapperHomePage: FC = memo(() => {
   const classes = useStyles();
-
   const { login, description } = useSelector(getInitDataGame);
 
   const dispatch = useDispatch();
@@ -58,6 +62,7 @@ export const WrapperHomePage: FC = memo(() => {
           name="login"
           label="login"
           placeholder="enter your login"
+          inputProps={{ className: classes.input, pattern: '[a-z]{1,15}' }}
           value={login}
           onChange={handleChange}
         />

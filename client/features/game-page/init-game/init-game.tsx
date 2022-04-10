@@ -23,7 +23,6 @@ export const WrapperGame: FC = memo(() => {
   const classes = useStyles();
 
   const dispatch = useDispatch();
-
   const { name } = useSelector(getInitDataGame);
   const isLeader = useSelector(getIsLeaderCurrentUser);
 

@@ -15,12 +15,14 @@ export type HomePageProps = UserProps & {
   typeGame?: string;
   name?: string;
   isOpen: boolean;
+  id?: string;
 };
 
 export const initialState: HomePageProps = {
   typeGame: undefined,
   name: undefined,
   login: undefined,
+  id: undefined,
   description: undefined,
   isOpen: false,
 };
@@ -31,6 +33,9 @@ const slice = createSlice({
   reducers: {
     joinGame: (state) => {
       state.typeGame = TYPE_GAME.EXISTING_GAME;
+    },
+    setId: (state, action) => {
+      state.id = action.payload;
     },
     createGame: (state) => {
       state.typeGame = TYPE_GAME.NEW_GAME;
@@ -58,6 +63,7 @@ export const {
   changeLogin,
   changeOpenGame,
   changeDescription,
+  setId,
 } = slice.actions;
 export const getInitDataGame = (store: StoreProps) => store.homePage;
 export const getCurrentLoginUser = (store: StoreProps) => store.homePage.login;

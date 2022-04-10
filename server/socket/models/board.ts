@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable no-param-reassign */
 import { BOARD } from 'server/socket/config/board';
 import { CEIL_TYPES } from 'server/socket/config/cell-types';
 import { Piece } from './piece';
@@ -7,6 +9,40 @@ export class Board {
 
   constructor() {
     this.board = Board.createMap();
+  }
+
+  update(fillRow: number) {
+    const notFill = this.board.filter((row) => {
+      if (row.includes('')) {
+        return true;
+      }
+      return false;
+    });
+
+    const notEmpty = this.board.filter((row) => {
+      if (row.some((char) => char !== '')) {
+        return true;
+      }
+      return false;
+    });
+
+    let score = (BOARD.ROW - (notFill.length) + fillRow) * BOARD.COL;
+    const currentFillRow = BOARD.ROW - notFill.length + fillRow;
+    const isFinish = notEmpty.length === BOARD.ROW;
+    while (notFill.length < BOARD.ROW) {
+      const row = [];
+      for (let j = 0; j < BOARD.COL; j += 1) {
+        row.push('');
+      }
+      notFill.unshift(row);
+    }
+    score += notFill.reduce((sum, row) => {
+      sum += row.filter((c) => c !== '').length;
+      return sum;
+    }, 0);
+
+    this.board = notFill;
+    return { score, fillRow: currentFillRow, isFinish };
   }
 
   setPiece(piece: Piece) {

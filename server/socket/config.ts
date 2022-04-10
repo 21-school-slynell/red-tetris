@@ -6,6 +6,8 @@ export const NAME_EVENT = {
   pressKey: 'pressKey',
   board: 'board',
   update: 'update',
+  finish: 'finish',
+  allFinish: 'allFinish',
 };
 
 export const createUserEventStatus = (userId: string, error: string) => {

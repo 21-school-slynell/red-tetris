@@ -1,3 +1,4 @@
+import { PREFIX } from 'server/server.utils';
 import { ContextProps } from '../routes';
 import { NAME_EVENT } from '../config';
 
@@ -24,7 +25,9 @@ export default function handle(payload: any, callback?: Function) {
     game.disconnectPlayer(player);
     io.in(player.roomName).emit(NAME_EVENT.users, {
       users: game.getPlayersList(),
-      name: payload.roomName,
+      name: player.roomName.split(PREFIX)[1],
+      login: player.login,
+      id: player.id,
     });
   }
 

@@ -5,7 +5,7 @@ import { KeyboardEvent, useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { pressedKey } from '../slice';
 
-export function useKeyPress() {
+export function useKeyPress(score?: number) {
   const [keyPressed, setKeyPressed] = useState<string | undefined>(undefined);
   const dispatch = useDispatch();
 
@@ -17,11 +17,13 @@ export function useKeyPress() {
 
   useEffect(() => {
     // @ts-ignore
-    window.addEventListener('keydown', debounce(downHandler, 150));
+    window.addEventListener('keydown', debounce(downHandler, 100));
     window.addEventListener('keyup', upHandler);
 
     interval = setInterval(() => {
-      dispatch(pressedKey('ArrowDown'));
+      if (Number.isNaN(Number(score))) {
+        dispatch(pressedKey('ArrowDown'));
+      }
     }, SPEED_DOWN);
 
     return () => {
@@ -31,6 +33,6 @@ export function useKeyPress() {
 
       clearInterval(interval);
     };
-  }, []);
+  }, [score]);
   return keyPressed;
 }
