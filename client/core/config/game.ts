@@ -10,4 +10,4 @@ export const STATE_GAME = {
 };
 
 // скорость опускания вниз фигурки мс
-export const SPEED_DOWN = 1000;
+export const SPEED_DOWN = 1500;

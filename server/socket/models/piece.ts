@@ -1,8 +1,8 @@
 import { getRandomInt } from 'client/utils/random';
-import { BOARD } from 'server/socket/config/board';
-import { CEIL_TYPES } from 'server/socket/config/cell-types';
-import { COLORS } from 'server/socket/config/colors';
-import { pieces } from 'server/socket/config/pieces';
+import { BOARD } from '@server/socket/config/board';
+import { CEIL_TYPES } from '@server/socket/config/cell-types';
+import { COLORS } from '@server/socket/config/colors';
+import { pieces } from '@server/socket/config/pieces';
 import { Board } from './board';
 
 export type PieceSerializeProps = {

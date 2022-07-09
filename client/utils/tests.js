@@ -1,7 +1,6 @@
 /* eslint-disable import/no-unresolved */
 /* eslint-disable no-undef */
 import { act } from 'react-dom/test-utils';
-
 /**
  * Функция для выполнения всех ожидающих промисов в EventLoop
  *
@@ -35,8 +34,7 @@ export const createWrapperUpdater = ({ withTimers = true } = {}) => {
     await act(async () => {
       // Завершаем все микротаски
       await flushPromises();
-
-      // Завершаем все макротаски
+      // // Завершаем все макротаски
       if (withTimers) {
         jest.runOnlyPendingTimers();
       }

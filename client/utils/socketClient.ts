@@ -1,6 +1,6 @@
 import io from 'socket.io-client';
 import { pick } from 'ramda';
-import { NAME_EVENT } from 'server/socket/config';
+import { NAME_EVENT } from '@server/socket/config';
 
 export type CreateSocketClientProps = {
   host: string,

@@ -1,4 +1,4 @@
-import { PREFIX } from 'server/server.utils';
+import { PREFIX } from '@server/server.utils';
 
 export const getNameRooms = (rooms: Map<string, any>) => {
   const names = Array.from(rooms.keys());

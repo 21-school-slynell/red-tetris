@@ -3,14 +3,15 @@ module.exports = {
   preset: 'ts-jest',
   testEnvironment: 'jsdom',
   moduleFileExtensions: ['js', 'jsx', 'ts', 'tsx'],
+  setupFilesAfterEnv: ['<rootDir>/setupTests.js'],
   moduleDirectories: ['node_modules', 'client'],
   moduleNameMapper: {
     '\\.(css|less|scss)$': 'identity-obj-proxy',
     'client(.*)$': '<rootDir>/client$1',
     '@core(.*)$': '<rootDir>/client/core$1',
-    'server(.*)$': '<rootDir>/server$1',
+    '@server(.*)$': '<rootDir>/server$1',
+    '@components(.*)$': '<rootDir>/client/components$1',
   },
-
   transform: {
     '^.+\\.(ts|tsx)?$': 'ts-jest',
     '^.+\\.(js|jsx)$': 'babel-jest',

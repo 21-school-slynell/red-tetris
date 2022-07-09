@@ -1,4 +1,4 @@
-import { PREFIX } from 'server/server.utils';
+import { PREFIX } from '@server/server.utils';
 import { ContextProps } from '../routes';
 import { NAME_EVENT } from '../config';
 
@@ -28,6 +28,8 @@ export default function handle(payload: any, callback?: Function) {
       name: player.roomName.split(PREFIX)[1],
       login: player.login,
       id: player.id,
+      score: undefined,
+      fillRow: undefined,
     });
   }
 

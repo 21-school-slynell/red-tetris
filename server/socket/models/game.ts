@@ -70,6 +70,7 @@ class Game {
         login: player.login,
         status: player.status,
         score: player.score,
+        fillRow: player.fillRow,
         isLeader: player.isLeader,
         description: player?.description,
       }))
@@ -78,6 +79,7 @@ class Game {
 
   connectPlayer(player: PlayerProps) {
     if (this.status !== GAME_STATUSES.PENDING) {
+      return;
       throw new UserError(`The game in the room '${this.roomName}' is already running`);
     }
 

@@ -3,14 +3,12 @@ import React, { FC, memo } from 'react';
 import { isServer } from 'client/core/store';
 import { useSelector } from 'react-redux';
 import { getInitDataGame } from '../home-page/slice';
-import { getIsStatusInitGame, getIsStatusStartGame } from './slice';
+import { getIsStatusInitGame } from './slice';
 import { InitGame } from './init-game/init-game';
 import { Playing } from './palying/playing';
 
 const useStyles = makeStyles({
   root: {
-    maxHeight: 800,
-    minHeight: 600,
     display: 'flex',
     position: 'relative',
     flexDirection: 'column',
@@ -23,23 +21,27 @@ export const WrapperGame: FC = memo(() => {
 
   const { name, login } = useSelector(getInitDataGame);
   const isInitGame = useSelector(getIsStatusInitGame);
-  const isStartGame = useSelector(getIsStatusStartGame);
 
   if (!(name && login)) {
     window.location.assign('#not-found');
   }
 
-  let content = null;
-
   if (isInitGame) {
-    content = <InitGame />;
+    return (
+      <Paper
+        className={classes.root}
+        style={{ maxWidth: 600, minWidth: 600, margin: 'auto' }}
+      >
+        <InitGame />
+      </Paper>
+    );
   }
 
-  if (isStartGame) {
-    content = <Playing />;
-  }
-
-  return <Paper className={classes.root}>{content}</Paper>;
+  return (
+    <Paper className={classes.root} style={{ minHeight: 800 }}>
+      <Playing />
+    </Paper>
+  );
 });
 
 const NullFC: FC = () => <></>;

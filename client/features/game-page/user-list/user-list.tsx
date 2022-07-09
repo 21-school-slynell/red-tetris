@@ -59,7 +59,7 @@ export default function UserList() {
         </Avatar>
       </ListItemAvatar>
       <ListItemText
-        primary={user.login}
+        primary={`${user.login}${user.isLeader ? ' - leader' : ''}`}
         secondary={(
           <>
             <Typography
@@ -67,10 +67,10 @@ export default function UserList() {
               className={classes.inline}
               color="textPrimary"
             >
-              {'About me - '}
+              {user.login === login ? 'You' : 'About me - '}
             </Typography>
             <Typography variant="subtitle2" className={classes.inline}>
-              {user?.description || 'introvert'}
+              {user.login !== login ? user?.description || 'introvert' : ''}
             </Typography>
           </>
         )}

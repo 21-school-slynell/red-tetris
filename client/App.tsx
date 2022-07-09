@@ -1,3 +1,4 @@
+/* eslint-disable global-require */
 import React, { FC, memo, useEffect } from 'react';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import { ThemeProvider } from '@material-ui/core/styles';
@@ -8,6 +9,9 @@ import { SnackBar } from '@components/SnackBar';
 import { globalThemeOverride } from './globalThemeOverride';
 import { Header } from './components/Header';
 import { Routing } from './components/Routing';
+// import { Rect0 } from './images/rect0';
+// import { Rect1 } from './images/rect1';
+// import { Rect2 } from './images/rect2';
 
 export const App: FC = memo(() => {
   const snackBar = useSelector(snackbarSelector);
@@ -24,7 +28,19 @@ export const App: FC = memo(() => {
     <ThemeProvider theme={globalThemeOverride(type)}>
       <CssBaseline />
       <SnackBar open={snackBar.isVisible} {...snackBar} />
-      <Container fixed maxWidth={false}>
+      {/* <Rect1 />
+
+      <Rect2 /> */}
+
+      <Container
+        fixed
+        maxWidth={false}
+        style={{
+                    height: '100vh',
+                    display: 'flex',
+                    flexDirection: 'column',
+                }}
+      >
         <Header />
         <Routing />
       </Container>

@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { NotFound } from 'client/features/not-found/not-found';
+import { WrapperNotFound } from 'client/features/not-found/not-found';
 import {
   changeLogin,
   changeNameGame,
@@ -19,7 +19,7 @@ export const WrapperRouting: FC = () => {
     const expGame = /^#([\w]*)\[(\w*)]/;
     const result = window.location.hash.match(expGame);
     if (!result) {
-      return <NotFound />;
+      return <WrapperNotFound />;
     }
 
     if (!login) {
@@ -29,7 +29,7 @@ export const WrapperRouting: FC = () => {
         dispatch(changeNameGame(name));
         dispatch(joinGame());
       } else {
-        return <NotFound />;
+        return <WrapperNotFound />;
       }
     }
     return <Game />;

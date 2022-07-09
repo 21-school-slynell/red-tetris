@@ -2,7 +2,7 @@
 import { createSlice, createAction } from '@reduxjs/toolkit';
 import { STATE_GAME } from 'client/core/config/game';
 import { StoreProps } from 'client/core/store';
-import { PieceSerializeProps } from 'server/socket/models/piece';
+import { PieceSerializeProps } from '@server/socket/models/piece';
 import { getCurrentLoginUser, UserProps } from '../home-page/slice';
 
 export const NAMESPACE = 'game-page';
@@ -43,6 +43,12 @@ const slice = createSlice({
     },
     setUsersBoard: (state, { payload }) => {
       state.usersBoard[payload.user] = payload.board;
+
+      const user = state.users.find((us) => us.login === payload.user);
+      if (user) {
+        user.score = payload.score;
+        user.fillRow = payload.fillRow;
+      }
     },
     setStartGame: (state) => {
       state.state = STATE_GAME.START;
@@ -61,6 +67,13 @@ const slice = createSlice({
       state.users = action.payload;
     },
     setUserResult: (state, action) => {
+      const user = state.users.find((us) => us.login === action.payload.player);
+      if (user) {
+        user.score = action.payload.score;
+        user.fillRow = action.payload.fillRow;
+        user.status = action.payload.status;
+      }
+      console.log(user);
       state.score = action.payload.score;
       state.fillRow = action.payload.fillRow;
     },
@@ -93,6 +106,13 @@ export const getIsLeaderCurrentUser = (store: StoreProps) => {
     return user?.isLeader;
   }
   return false;
+};
+
+export const getCurrentUser = (store: StoreProps) => {
+  const login = getCurrentLoginUser(store);
+  const users = getUsers(store) as UserProps[];
+  const user = users.find((obj) => obj.login === login);
+  return user;
 };
 
 export const getIsStatusInitGame = (store: StoreProps) => store.gamePage.state === STATE_GAME.INIT;

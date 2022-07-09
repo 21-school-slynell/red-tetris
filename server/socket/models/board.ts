@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable no-param-reassign */
-import { BOARD } from 'server/socket/config/board';
-import { CEIL_TYPES } from 'server/socket/config/cell-types';
+import { BOARD } from '@server/socket/config/board';
+import { CEIL_TYPES } from '@server/socket/config/cell-types';
 import { Piece } from './piece';
 
 export class Board {

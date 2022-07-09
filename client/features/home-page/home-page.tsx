@@ -8,12 +8,13 @@ import { changeDescription, changeLogin, getInitDataGame } from './slice';
 
 const useStyles = makeStyles({
   root: {
-    maxHeight: 1000,
-    minHeight: 600,
     display: 'flex',
+    maxWidth: 600,
+    minWidth: 600,
     position: 'relative',
     flexDirection: 'column',
     padding: 24,
+    margin: 'auto',
   },
   grid: {
     display: 'grid',
@@ -55,7 +56,7 @@ export const WrapperHomePage: FC = memo(() => {
 
   return (
     <Paper className={classes.root}>
-      <Grid item xs={12} md={6} className={classes.grid}>
+      <Grid item xs={12} md={12} className={classes.grid}>
         <TextField
           variant="outlined"
           fullWidth

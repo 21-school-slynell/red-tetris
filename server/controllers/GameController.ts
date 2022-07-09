@@ -1,5 +1,5 @@
 import { Response, Request } from 'express';
-import { getNameRooms } from 'server/socket/utils/rooms';
+import { getNameRooms } from '@server/socket/utils/rooms';
 
 export class GameController {
   public static getRooms(req: Request, res: Response) {

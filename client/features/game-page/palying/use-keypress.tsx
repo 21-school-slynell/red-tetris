@@ -1,11 +1,12 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { debounce } from '@material-ui/core/utils';
+import { PLAYER_STATUSES } from '@server/socket/constants';
 import { SPEED_DOWN } from 'client/core/config/game';
 import { KeyboardEvent, useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { pressedKey } from '../slice';
 
-export function useKeyPress(score?: number) {
+export function useKeyPress(status?: string) {
   const [keyPressed, setKeyPressed] = useState<string | undefined>(undefined);
   const dispatch = useDispatch();
 
@@ -21,7 +22,7 @@ export function useKeyPress(score?: number) {
     window.addEventListener('keyup', upHandler);
 
     interval = setInterval(() => {
-      if (Number.isNaN(Number(score))) {
+      if (status !== PLAYER_STATUSES.FINISHED) {
         dispatch(pressedKey('ArrowDown'));
       }
     }, SPEED_DOWN);
@@ -33,6 +34,6 @@ export function useKeyPress(score?: number) {
 
       clearInterval(interval);
     };
-  }, [score]);
+  }, [status]);
   return keyPressed;
 }

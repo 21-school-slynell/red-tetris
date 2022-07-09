@@ -1,14 +1,15 @@
 import { createSocketClient } from 'client/utils/socketClient';
-import { NAME_EVENT } from 'server/socket/config';
+import { NAME_EVENT } from '@server/socket/config';
 import { changeOpenGame, createGame, joinGame, setId } from 'client/features/home-page/slice';
 import { STATE_GAME } from 'client/core/config/game';
 import { changeStatusGame, pressedKey, setBoard, setKey, setStartGame, setUserResult, setUsers, setUsersBoard } from 'client/features/game-page/slice';
 import { StoreProps } from '../store.types';
 import { showSnackBarAction } from '..';
 
-const handlerSetUsers = (dispatch: any) => ({ users, name, login, id }: any) => {
+const handlerSetUsers = (dispatch: any, getState: any) => ({ users, name, login, id }: any) => {
   dispatch(changeOpenGame());
-  window.location.assign(`#${name}[${login}]`);
+  const state = getState() as StoreProps;
+  window.location.assign(`#${name}[${state?.homePage?.login || login}]`);
   dispatch(setId(id));
   dispatch(setUsers(users));
 };
@@ -46,7 +47,7 @@ export const socketMiddleware = ({ dispatch, getState }: any) => {
       host: '',
       options: {},
       handlers: {
-        [NAME_EVENT.users]: handlerSetUsers(dispatch),
+        [NAME_EVENT.users]: handlerSetUsers(dispatch, getState),
         [NAME_EVENT.start]: handlerStartGame(dispatch),
         [NAME_EVENT.error]: handlerError(dispatch),
         [NAME_EVENT.pressKey]: handlerKeyPress(dispatch),

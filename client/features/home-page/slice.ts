@@ -9,6 +9,9 @@ export type UserProps = {
   login?: string,
   description?: string,
   isLeader?: boolean,
+  status?: string,
+  score?: number,
+  fillRow?: number,
 };
 
 export type HomePageProps = UserProps & {

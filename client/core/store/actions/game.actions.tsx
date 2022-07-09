@@ -2,7 +2,7 @@
 import { ThunkAction } from 'redux-thunk';
 import { Action } from 'redux';
 import { GameAPI } from '@core/api';
-import { PREFIX } from 'server/server.utils';
+import { PREFIX } from '@server/server.utils';
 import { StoreProps } from '../store.types';
 import { GAME } from './action.types';
 import { showSnackBarAction } from './snackbar.actions';

@@ -27,7 +27,7 @@
             "client/*": [
                 "./client/*"
             ],
-            "server/*": [
+            "@server/*": [
                 "./server/*"
             ],
             "@components/*": [
@@ -47,6 +47,6 @@
     "include": [
         "client",
         "server",
-        "index.d.ts"
+        "client/index.d.ts"
     ]
 }

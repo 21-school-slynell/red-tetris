@@ -17,7 +17,8 @@ export default function handle({ key }: any, callback?: Function) {
     player.finish();
     player.setFillRow(fillRow);
     player.setScore(score);
-    socket.emit(NAME_EVENT.finish, { score: player.score, fillRow: player.fillRow });
+    // eslint-disable-next-line max-len
+    socket.emit(NAME_EVENT.finish, { score: player.score, fillRow: player.fillRow, player: player.login, status: PLAYER_STATUSES.FINISHED });
     if (game?.isFinish()) {
       io.in(player?.roomName || '').emit(NAME_EVENT.allFinish);
     }
@@ -39,6 +40,8 @@ export default function handle({ key }: any, callback?: Function) {
         // Делаем оповещение всем остальным игрокам какое состояние доски и их соперника
         io.in(player?.roomName || '').emit(NAME_EVENT.update, {
           user: player.login,
+          score: player.score,
+          fillRow: player.fillRow,
           board: board.serialize(),
         });
 
@@ -55,6 +58,8 @@ export default function handle({ key }: any, callback?: Function) {
           io.in(player?.roomName || '').emit(NAME_EVENT.update, {
             user: player.login,
             board: board.serialize(),
+            score: player.score,
+            fillRow: player.fillRow,
           });
           socket.emit(NAME_EVENT.board, board.serialize());
         }, 50);
@@ -64,7 +69,8 @@ export default function handle({ key }: any, callback?: Function) {
       socket.emit(NAME_EVENT.pressKey, piece.serialize(), pieces.length);
     } else {
       player.finish();
-      socket.emit(NAME_EVENT.finish, { score: player.score, fillRow: player.fillRow });
+      // eslint-disable-next-line max-len
+      socket.emit(NAME_EVENT.finish, { score: player.score, fillRow: player.fillRow, player: player.login, status: PLAYER_STATUSES.FINISHED });
       if (game.isFinish()) {
         io.in(player?.roomName || '').emit(NAME_EVENT.allFinish);
       }

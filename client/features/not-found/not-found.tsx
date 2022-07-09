@@ -1,16 +1,16 @@
 import { Button, Grid, makeStyles, Paper, Typography } from '@material-ui/core';
 import React, { FC, memo } from 'react';
-import { isServer } from 'client/core/store';
 
 const useStyles = makeStyles({
   root: {
-    maxHeight: 1000,
+    maxHeight: 800,
     minHeight: 600,
     display: 'flex',
     position: 'relative',
     flexDirection: 'column',
     justifyContent: 'center',
     padding: 24,
+    minWidth: 600,
   },
   grid: {
     display: 'grid',
@@ -38,7 +38,3 @@ export const WrapperNotFound: FC = memo(() => {
     </Paper>
   );
 });
-
-const NullFC: FC = () => <></>;
-
-export const NotFound = !isServer ? WrapperNotFound : NullFC;

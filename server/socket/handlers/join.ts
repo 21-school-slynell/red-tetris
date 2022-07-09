@@ -28,6 +28,8 @@ export default function handle(payload: any, callback?: Function) {
       name: payload.roomName,
       login,
       id: player.id,
+      score: undefined,
+      fillRow: undefined,
     });
   }
 

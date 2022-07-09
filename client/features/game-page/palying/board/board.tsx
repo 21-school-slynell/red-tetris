@@ -12,7 +12,7 @@ import {
 } from '@material-ui/core/colors';
 import clsx from 'clsx';
 import React, { FC, memo } from 'react';
-import { PieceSerializeProps } from 'server/socket/models/piece';
+import { PieceSerializeProps } from '@server/socket/models/piece';
 import { BOARD } from '../../../../../server/socket/config/board';
 
 const useStyles = makeStyles((theme: Theme) => createStyles({
@@ -28,10 +28,34 @@ const useStyles = makeStyles((theme: Theme) => createStyles({
     display: 'grid',
     gap: 16,
   },
+  board: ({ isSmall }: any) => ({
+    borderRadius: isSmall ? 10 : 20,
+    border: `${isSmall ? 1 : 2}px solid ${
+      isSmall
+        ? '#828282'
+        : theme.palette.primary.main
+    }`,
+    overflow: 'hidden',
+    background: `repeating-linear-gradient(
+      transparent,transparent ${isSmall ? 7 : 27}px, ${theme.palette.divider} ${
+      isSmall ? 8 : 28
+    }px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      transparent,transparent ${isSmall ? 7 : 27}px, ${theme.palette.divider} ${
+      isSmall ? 8 : 28
+    }px
+    )`,
+  }),
   ceil: ({ isSmall }: any) => ({
-    border: `1px solid ${theme.palette.divider}`,
-    width: isSmall ? 12 : 22,
-    height: isSmall ? 12 : 22,
+    width: isSmall ? 6 : 26,
+    height: isSmall ? 6 : 26,
+    margin: 1,
+    borderRadius: isSmall ? 1 : 4,
+    '&::before': {
+      background: 'red',
+    },
   }),
   selected: {
     boxShadow: 'inset 0px 0px 3px 2px rgb(0 0 0, 0.05)',
@@ -106,8 +130,9 @@ export const Board: FC<BoardProps> = memo(({ board, isSmall = true }) => {
   const boardComponent = Array(BOARD.ROW)
     .fill(0)
     .map((_, rowId) => (
+      // eslint-disable-next-line react/no-array-index-key
       <div className={classes.row}>{createRow(rowId)}</div>
     ));
 
-  return <div>{boardComponent}</div>;
+  return <div className={classes.board}>{boardComponent}</div>;
 });

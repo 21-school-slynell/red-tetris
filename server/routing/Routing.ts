@@ -1,6 +1,6 @@
 import express, { Express } from 'express';
 import path from 'path';
-import { ThemeController, GameController } from 'server/controllers';
+import { ThemeController, GameController } from '@server/controllers';
 import { BUILD_DIR } from '../../env';
 
 export function routing(app: Express) {

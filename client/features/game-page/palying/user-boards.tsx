@@ -15,18 +15,17 @@ import { Board } from './board/board';
 const useStyles = makeStyles((theme: Theme) => createStyles({
   root: {
     display: 'flex',
-    flexDirection: 'column',
     overflow: 'overlay',
+    alignItems: 'center',
+    justifyContent: 'center',
     padding: theme.spacing(1),
-    paddingRight: theme.spacing(3),
-    gap: theme.spacing(2),
-  },
-  board: {
-    height: 288,
-    width: 136,
+    gap: theme.spacing(4),
+    minHeight: 202,
   },
   text: {
     overflow: 'hidden',
+    whiteSpace: 'nowrap',
+    textOverflow: 'ellipsis',
   },
 }));
 
@@ -40,12 +39,20 @@ export const WrapperUsersBoard: FC = memo(() => {
     const users = Object.keys(usersBoard).filter((user) => user !== login);
 
     return users.map((user) => (
-      <Paper elevation={3} className={classes.board} style={{ padding: 8 }}>
+      <Paper
+        elevation={0}
+        style={{ padding: 8, height: 202, width: 97 }}
+      >
         <Typography
           variant="body1"
-          color="primary"
+          color="textPrimary"
           align="center"
           className={classes.text}
+          style={{
+            overflow: 'hidden',
+            whiteSpace: 'nowrap',
+            textOverflow: 'ellipsis',
+          }}
         >
           {user}
         </Typography>

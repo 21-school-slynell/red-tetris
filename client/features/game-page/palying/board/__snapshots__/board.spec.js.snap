@@ -1,0 +1,2749 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Board Снапшот - большая плашка + фигурки 1`] = `
+<div
+  className="makeStyles-board-3 makeStyles-board-22"
+>
+  <div
+    className="makeStyles-row-6"
+  >
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+  </div>
+  <div
+    className="makeStyles-row-6"
+  >
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+  </div>
+  <div
+    className="makeStyles-row-6"
+  >
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+  </div>
+  <div
+    className="makeStyles-row-6"
+  >
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+  </div>
+  <div
+    className="makeStyles-row-6"
+  >
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+  </div>
+  <div
+    className="makeStyles-row-6"
+  >
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+  </div>
+  <div
+    className="makeStyles-row-6"
+  >
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+  </div>
+  <div
+    className="makeStyles-row-6"
+  >
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+  </div>
+  <div
+    className="makeStyles-row-6"
+  >
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+  </div>
+  <div
+    className="makeStyles-row-6"
+  >
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+  </div>
+  <div
+    className="makeStyles-row-6"
+  >
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+  </div>
+  <div
+    className="makeStyles-row-6"
+  >
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+  </div>
+  <div
+    className="makeStyles-row-6"
+  >
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+  </div>
+  <div
+    className="makeStyles-row-6"
+  >
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+  </div>
+  <div
+    className="makeStyles-row-6"
+  >
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+  </div>
+  <div
+    className="makeStyles-row-6"
+  >
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+  </div>
+  <div
+    className="makeStyles-row-6"
+  >
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+  </div>
+  <div
+    className="makeStyles-row-6"
+  >
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+  </div>
+  <div
+    className="makeStyles-row-6"
+  >
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23 makeStyles-selected-5 makeStyles-pink-11"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+  </div>
+  <div
+    className="makeStyles-row-6"
+  >
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23 makeStyles-selected-5 makeStyles-pink-11"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23 makeStyles-selected-5 makeStyles-pink-11"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23 makeStyles-selected-5 makeStyles-pink-11"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-23"
+    />
+  </div>
+</div>
+`;
+
+exports[`Board Снапшот - большая плашка 1`] = `
+<div
+  className="makeStyles-board-3 makeStyles-board-20"
+>
+  <div
+    className="makeStyles-row-6"
+  >
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+  </div>
+  <div
+    className="makeStyles-row-6"
+  >
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+  </div>
+  <div
+    className="makeStyles-row-6"
+  >
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+  </div>
+  <div
+    className="makeStyles-row-6"
+  >
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+  </div>
+  <div
+    className="makeStyles-row-6"
+  >
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+  </div>
+  <div
+    className="makeStyles-row-6"
+  >
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+  </div>
+  <div
+    className="makeStyles-row-6"
+  >
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+  </div>
+  <div
+    className="makeStyles-row-6"
+  >
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+  </div>
+  <div
+    className="makeStyles-row-6"
+  >
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+  </div>
+  <div
+    className="makeStyles-row-6"
+  >
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+  </div>
+  <div
+    className="makeStyles-row-6"
+  >
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+  </div>
+  <div
+    className="makeStyles-row-6"
+  >
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+  </div>
+  <div
+    className="makeStyles-row-6"
+  >
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+  </div>
+  <div
+    className="makeStyles-row-6"
+  >
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+  </div>
+  <div
+    className="makeStyles-row-6"
+  >
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+  </div>
+  <div
+    className="makeStyles-row-6"
+  >
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+  </div>
+  <div
+    className="makeStyles-row-6"
+  >
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+  </div>
+  <div
+    className="makeStyles-row-6"
+  >
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+  </div>
+  <div
+    className="makeStyles-row-6"
+  >
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+  </div>
+  <div
+    className="makeStyles-row-6"
+  >
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-21"
+    />
+  </div>
+</div>
+`;
+
+exports[`Board Снапшот - маленькая плашка + фигурки 1`] = `
+<div
+  className="makeStyles-board-3 makeStyles-board-18"
+>
+  <div
+    className="makeStyles-row-6"
+  >
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+  </div>
+  <div
+    className="makeStyles-row-6"
+  >
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+  </div>
+  <div
+    className="makeStyles-row-6"
+  >
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+  </div>
+  <div
+    className="makeStyles-row-6"
+  >
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+  </div>
+  <div
+    className="makeStyles-row-6"
+  >
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+  </div>
+  <div
+    className="makeStyles-row-6"
+  >
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+  </div>
+  <div
+    className="makeStyles-row-6"
+  >
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+  </div>
+  <div
+    className="makeStyles-row-6"
+  >
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+  </div>
+  <div
+    className="makeStyles-row-6"
+  >
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+  </div>
+  <div
+    className="makeStyles-row-6"
+  >
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+  </div>
+  <div
+    className="makeStyles-row-6"
+  >
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+  </div>
+  <div
+    className="makeStyles-row-6"
+  >
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+  </div>
+  <div
+    className="makeStyles-row-6"
+  >
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+  </div>
+  <div
+    className="makeStyles-row-6"
+  >
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+  </div>
+  <div
+    className="makeStyles-row-6"
+  >
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+  </div>
+  <div
+    className="makeStyles-row-6"
+  >
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+  </div>
+  <div
+    className="makeStyles-row-6"
+  >
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+  </div>
+  <div
+    className="makeStyles-row-6"
+  >
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+  </div>
+  <div
+    className="makeStyles-row-6"
+  >
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19 makeStyles-selected-5 makeStyles-pink-11"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+  </div>
+  <div
+    className="makeStyles-row-6"
+  >
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19 makeStyles-selected-5 makeStyles-pink-11"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19 makeStyles-selected-5 makeStyles-pink-11"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19 makeStyles-selected-5 makeStyles-pink-11"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-19"
+    />
+  </div>
+</div>
+`;
+
+exports[`Board Снапшот - маленькая плашка 1`] = `
+<div
+  className="makeStyles-board-3 makeStyles-board-16"
+>
+  <div
+    className="makeStyles-row-6"
+  >
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+  </div>
+  <div
+    className="makeStyles-row-6"
+  >
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+  </div>
+  <div
+    className="makeStyles-row-6"
+  >
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+  </div>
+  <div
+    className="makeStyles-row-6"
+  >
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+  </div>
+  <div
+    className="makeStyles-row-6"
+  >
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+  </div>
+  <div
+    className="makeStyles-row-6"
+  >
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+  </div>
+  <div
+    className="makeStyles-row-6"
+  >
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+  </div>
+  <div
+    className="makeStyles-row-6"
+  >
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+  </div>
+  <div
+    className="makeStyles-row-6"
+  >
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+  </div>
+  <div
+    className="makeStyles-row-6"
+  >
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+  </div>
+  <div
+    className="makeStyles-row-6"
+  >
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+  </div>
+  <div
+    className="makeStyles-row-6"
+  >
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+  </div>
+  <div
+    className="makeStyles-row-6"
+  >
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+  </div>
+  <div
+    className="makeStyles-row-6"
+  >
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+  </div>
+  <div
+    className="makeStyles-row-6"
+  >
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+  </div>
+  <div
+    className="makeStyles-row-6"
+  >
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+  </div>
+  <div
+    className="makeStyles-row-6"
+  >
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+  </div>
+  <div
+    className="makeStyles-row-6"
+  >
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+  </div>
+  <div
+    className="makeStyles-row-6"
+  >
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+  </div>
+  <div
+    className="makeStyles-row-6"
+  >
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+    <div
+      className="makeStyles-ceil-4 makeStyles-ceil-17"
+    />
+  </div>
+</div>
+`;

@@ -14,8 +14,7 @@ import { getIsLeaderCurrentUser, setStartGame } from '../slice';
 
 const useStyles = makeStyles({
   grid: {
-    display: 'grid',
-    gap: 16,
+    textAlign: 'center',
   },
 });
 
@@ -31,9 +30,9 @@ export const WrapperGame: FC = memo(() => {
   };
 
   return (
-    <Grid item xs={12} md={6} className={classes.grid}>
+    <Grid item xs={12} md={12} className={classes.grid}>
       <Typography align="center" variant="h6">
-        {name}
+        {`Game: ${name}`}
       </Typography>
       <Divider variant="middle" />
       <UserList />
