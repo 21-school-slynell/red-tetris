@@ -1,3 +1,4 @@
+/* eslint-disable react/no-array-index-key */
 import { createStyles, makeStyles, Theme } from '@material-ui/core';
 import {
   blue,
@@ -94,10 +95,10 @@ const useStyles = makeStyles((theme: Theme) => createStyles({
 
 type BoardProps = {
   board: PieceSerializeProps[];
-  isSmall?: boolean;
+  isSmall: boolean;
 };
 
-export const Board: FC<BoardProps> = memo(({ board, isSmall = true }) => {
+export const Board: FC<BoardProps> = memo(({ board, isSmall }) => {
   const classes = useStyles({ isSmall });
 
   const styleCells = (rowId: number, colId: number) => {
@@ -130,7 +131,6 @@ export const Board: FC<BoardProps> = memo(({ board, isSmall = true }) => {
   const boardComponent = Array(BOARD.ROW)
     .fill(0)
     .map((_, rowId) => (
-      // eslint-disable-next-line react/no-array-index-key
       <div className={classes.row}>{createRow(rowId)}</div>
     ));
 

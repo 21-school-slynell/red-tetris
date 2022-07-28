@@ -1,5 +1,5 @@
 {
-    "name": "blur",
+    "name": "red-tetris",
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
@@ -10,6 +10,7 @@
         "ssr-build": "cross-env NODE_ENV=production webpack --config webpack.config.server.js",
         "ssr-serve": "node ./build/server.js",
         "test": "jest",
+        "test:coverage": "jest --coverage",
         "lint": "eslint . --fix"
     },
     "repository": {
