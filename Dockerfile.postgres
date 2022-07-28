@@ -1,3 +1,0 @@
-FROM postgres
-
-RUN mkdir -p ${PGDATA} && chmod 700 ${PGDATA}
