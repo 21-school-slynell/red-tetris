@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { composeStore, history } from '@core/store';
 import React from 'react';
 import ReactDOM from 'react-dom';

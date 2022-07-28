@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { createHashHistory, createMemoryHistory } from 'history';
 import { configureStore } from '@reduxjs/toolkit';
 import { initialState as InitialStateHomePage } from 'client/features/home-page/slice';

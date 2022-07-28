@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { ServerStyleSheets } from '@material-ui/core';
 import { App } from 'client/App';
 import { StoreProps } from 'client/core/store';
