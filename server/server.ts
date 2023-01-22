@@ -4,34 +4,43 @@ import hotMiddleware from 'webpack-hot-middleware';
 import cookieParser from 'cookie-parser';
 import webpack, { Configuration } from 'webpack';
 import { createServer } from 'http';
+import JiraApi from 'jira-client';
+import * as dotenv from 'dotenv';
 import * as webpackConfig from '../webpack.config.client';
-import { renderBundle } from './middlewares/renderBundle';
+import { renderBundle } from './middlewares/render-bundle';
 import { routing } from './routing';
-import { createSocket } from './socket/server';
-import { getNameRooms } from './socket/utils/rooms';
+
+dotenv.config();
 
 const compiler = webpack(webpackConfig as Configuration);
 
+const { env } = process;
 export class Server {
   private app;
 
   private server;
 
-  private socket;
+  jira: JiraApi;
 
   constructor() {
     this.app = express();
     this.server = createServer(this.app);
-    this.socket = createSocket();
 
-    this.socket.attach(this.server);
+    this.jira = new JiraApi({
+      protocol: 'https',
+      host: env.HOST || '',
+      username: env.USERNAME,
+      password: env.PASSWORD,
+      apiVersion: '2',
+      strictSSL: true,
+    });
+
     this.config();
     this.routerConfig();
   }
 
   private config() {
-    this.app.set('socket', this.socket);
-
+    this.app.set('jira', this.jira);
     this.app.use(cookieParser());
     this.app.use(devMiddleware(compiler, {
       serverSideRender: true,
@@ -39,15 +48,7 @@ export class Server {
       publicPath: '/',
     }));
 
-    this.app.get('/_info', async (req, res) => {
-      const socket = req.app.get('socket');
-      const { rooms } = socket.of('/').adapter;
-
-      const nameRooms = getNameRooms(rooms);
-      if (nameRooms.length) {
-        socket.to(nameRooms[1]).emit('private message', socket.id, 'Xnj');
-      }
-
+    this.app.get('/api/_info', async (req, res) => {
       res.jsonp({ result: 'ok' });
     });
 

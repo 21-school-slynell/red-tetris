@@ -1,2 +1,2 @@
-export * from './ThemeController';
-export * from './GameController';
+export * from './theme-controller';
+export * from './jira-controller';

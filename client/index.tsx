@@ -4,7 +4,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { hot } from 'react-hot-loader/root';
-// import { ConnectedRouter } from 'connected-react-router';
 import { App } from './App';
 import 'core-js/stable';
 import 'regenerator-runtime/runtime';
@@ -15,9 +14,7 @@ const store = composeStore(window.__INITIAL_STATE__);
 
 const RootComponent = () => (
   <Provider store={store}>
-    {/* <ConnectedRouter history={history}> */}
     <App />
-    {/* </ConnectedRouter> */}
   </Provider>
 );
 
@@ -30,4 +27,3 @@ if ((module as any).hot) {
     store.replaceReducer(rootReducer(history));
   });
 }
-// startServiceWorker();

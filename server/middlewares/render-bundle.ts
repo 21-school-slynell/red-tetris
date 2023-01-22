@@ -5,7 +5,7 @@ import {
 import { NextFunction, Request, Response } from 'express';
 import fetch from 'node-fetch';
 
-import { renderHtml } from './renderHtml';
+import { renderHtml } from './render-html';
 
 if (!global.fetch) {
   // @ts-ignore
